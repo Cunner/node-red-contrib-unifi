@@ -153,7 +153,10 @@ module.exports = function (RED) {
                         break;
                     case 'unsetlocate':
                         controller.setLocateAccessPoint(site, msg.payload.mac, false, handleDataCallback);
-                        break;           
+                        break;    
+                    case 'editGroup':
+                        controller.editUserGroup(site, msg.payload.group_id, msg.payload.site_id, msg.payload.group_name, handleDataCallback, msg.payload.speed );
+                        break;    
                     default:
                         controller.logout();
                         node.status({
