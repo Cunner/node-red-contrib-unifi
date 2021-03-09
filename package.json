@@ -9,7 +9,7 @@
   },
   "node-red": {
     "nodes": {
-      "unifi": "unifi.js"
+      "unifi_cunner": "unifi_cunner.js"
     }
   },
   "scripts": {
